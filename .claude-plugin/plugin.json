@@ -1,0 +1,16 @@
+{
+  "name": "mayer",
+  "version": "0.1.0",
+  "description": "Study toolkit for FMIPA UI math coursework, named after Walther Mayer, Einstein's mathematical assistant: tutoring style, work checks, Socratic sessions with a Mistake Log practice loop, compact tugas write-ups, diktat builder, and a brain-dump study priority planner.",
+  "author": {
+    "name": "Gianfarren Irawan"
+  },
+  "keywords": [
+    "math",
+    "tutoring",
+    "study",
+    "diktat",
+    "kuliah",
+    "mayer"
+  ]
+}
