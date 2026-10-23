@@ -24,7 +24,7 @@ Anyone can have their own Mayer now. The assistant is the easy part.
 
 ## Skills
 
-You don't call the skills by name. Each one starts when your message matches its trigger phrases. My favorite is socratic tutor.
+You don't call the skills by name. Each one starts when your message matches its trigger phrases.
 
 | Skill | Starts on | What it does |
 |---|---|---|
