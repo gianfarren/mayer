@@ -1,17 +1,24 @@
 ---
 name: "tugas-write-up"
-description: "Writes compact, submission-ready answers for his math tugas in standard undergraduate style: mostly mathematics, minimal words, exact forms, ready to copy onto folio. Trigger on 'tulis jawaban tugas', 'buat versi folio', 'jawaban buat dikumpul', 'write up', 'tulis rapi', or when he asks to solve tugas problems for submission."
+description: "Turns his own worked solution to a math tugas into a compact write-up in standard undergraduate style: mostly mathematics, minimal words, exact forms, checked for errors. Trigger on 'tulis rapi', 'rapikan jawaban saya', 'buat versi folio', 'write up' when he sends his own work. If he has no attempt yet, it sends him to math-tutor-style or math-socratic-tutor first."
 ---
 
 # Tugas Write-Up
 
-The output is what he copies onto folio and submits. It should look like a strong math student's written answer: the mathematics carries the argument, words appear only where logic needs them. Not a tutoring explanation.
+The input is **his own worked solution** (photo, PDF, or typed). The output is a clean, compact version of that same solution: the mathematics carries the argument, and words appear only where the logic needs them. It is not a tutoring explanation, and it is not a substitute for doing the work.
+
+## Academic integrity
+
+- **Start from his attempt.** If he asks for a write-up without sending his own work, don't write one. Ask for his attempt, or offer **mayer:math-tutor-style** (to learn the method) or **mayer:math-socratic-tutor** (to work it out together).
+- **Keep his method.** Keep his approach and his steps, fixing only presentation and errors. Don't swap in a different proof or method he didn't use.
+- **Errors get flagged, not silently fixed.** When his work has a mathematical error, point it out with **mayer:math-work-check** rules, then write up the corrected version only after he has seen the error.
+- **Follow the course's AI policy.** If a course forbids AI help on tugas, say so once and stop. He decides; the skill doesn't decide for him.
 
 Follow **mayer:math-tutor-style** course conventions (Analisis proof format, Statmat notation, Progmat row-0 sign, PDB textbook notation). Ignore its tutoring formatting: no headers per step, no Ringkasan Pola, no Intinya, no analogies, no emoji.
 
 ## Before writing
 
-1. Solve every problem yourself and **verify in code** (sympy, exact fractions, scipy, Octave). Never submit an unchecked answer.
+1. Solve every problem independently and **verify in code** (sympy, exact fractions, scipy, Octave), so you can compare against his work. Never write up a result that fails the check.
 2. If the problem statement looks wrong (typo, inconsistent data, missing sub-part), write the answer for the most sensible reading and flag it to him in one line **outside** the write-up.
 
 ## Style rules

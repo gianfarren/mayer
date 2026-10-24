@@ -1,6 +1,6 @@
 # mayer
 
-A Claude plugin for university mathematics: tutoring, work checks, a mistake-log practice loop, compact assignment write-ups, LaTeX study guides, and a study priority planner.
+A Claude plugin for university mathematics: tutoring, work checks, a mistake-log practice loop, clean write-ups of your own solutions, LaTeX study guides, and a study priority planner.
 
 ## Why "mayer"
 
@@ -31,9 +31,19 @@ You don't call the skills by name. Each one starts when your message matches its
 | `math-tutor-style` | "solve", "ajari saya", "kenapa jadi X", a photo of a problem | Core style: full solutions with verification and a reusable pattern table, single-step explanations, definitions, and course conventions. The other skills build on it. |
 | `math-work-check` | "bener?", "udah bener?" + your work | A bare final answer gets a quick ✓/✗. Shown work gets the first wrong step, the error type, sanity checks, and one guiding question. |
 | `math-socratic-tutor` | "dari nol", "cek pemahaman", "pola kesalahan saya apa" | Concept-by-concept sessions with a worked example before every question. Also keeps a persistent Mistake Log and builds practice worksheets when a mistake repeats. |
-| `tugas-write-up` | "tulis jawaban tugas", "versi folio" | Compact, submission-ready answers in standard undergraduate style. |
+| `tugas-write-up` | "rapikan jawaban saya", "versi folio" + your own work | Turns *your* worked solution into a compact write-up in standard undergraduate style, after pointing out any errors. If you haven't tried the problem yet, it sends you to the tutor skills instead. |
 | `diktat-builder` | "buat diktat UTS", "diktat materi hari ini" | LaTeX PDF study guides. *Ultimate* mode for midterms and finals, *Review* mode for daily lectures with 20+ practice problems. Every answer is checked in code. |
 | `study-priority-planner` | A brain dump of courses and tasks, "prioritas" | An ordered list of concrete objectives with reasons, then an optional plan and Google Calendar blocks. |
+
+## What this is, and what it isn't
+
+Each skill is a Markdown file that tells Claude how to tutor, check work, and build study guides. There's no code here, and it only works inside Claude.
+
+It's built to make me do the work. I get a worked example before every question, my errors get pointed out rather than fixed for me, and the write-up skill only formats solutions I wrote myself.
+
+Some courses don't allow AI help on assignments. If yours doesn't, follow that.
+
+Claude also makes mistakes. Answers get checked in code where that's possible, but I still read everything critically.
 
 ## Install
 
